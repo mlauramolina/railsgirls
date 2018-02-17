@@ -18,6 +18,7 @@ end
 # Use carrierwave added by mlauramolina
 gem 'carrierwave'
 gem 'mini_magick', '4.8.0'
+gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
