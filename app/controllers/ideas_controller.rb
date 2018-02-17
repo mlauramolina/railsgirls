@@ -72,3 +72,6 @@ class IdeasController < ApplicationController
       params.require(:idea).permit(:name, :description, :picture)
     end
 end
+
+@comments = @idea.comments.all
+@comment = @idea.comments.build
