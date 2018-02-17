@@ -10,6 +10,8 @@ class IdeasController < ApplicationController
   # GET /ideas/1
   # GET /ideas/1.json
   def show
+    @comments = @idea.comments.all
+@comment = @idea.comments.build
   end
 
   # GET /ideas/new
@@ -72,6 +74,3 @@ class IdeasController < ApplicationController
       params.require(:idea).permit(:name, :description, :picture)
     end
 end
-
-@comments = @idea.comments.all
-@comment = @idea.comments.build
